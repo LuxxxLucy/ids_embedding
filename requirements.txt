@@ -1,0 +1,12 @@
+pyyaml
+torch
+numpy
+tqdm
+matplotlib
+svgwrite 
+svgpathtools
+cssutils
+numba
+torch-tools
+visdom
+enlighten
