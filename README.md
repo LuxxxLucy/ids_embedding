@@ -2,6 +2,8 @@
 
 An Embeddings for Ideographic Description Sequence (IDS)
 
+A blog can be find [here](https://luxxxlucy.github.io/projects/2023_embedding/embedding.html)
+
 ## dependency
 
 1. `antlr4`: use to generate the ANTLR4 parser, based on `ids_embed/parse/ids.g4`
