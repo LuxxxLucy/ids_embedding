@@ -1,0 +1,16 @@
+*/parser/parser/*.interp
+*/parser/parser/*.tokens
+*/parser/parser/*.py
+
+*/__pycache__
+*/*/__pycache__
+*/*/*/__pycache__
+
+*.pyc
+
+storage
+*.jpg
+*.png
+
+configs/
+asset/
