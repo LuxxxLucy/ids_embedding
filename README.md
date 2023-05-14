@@ -17,3 +17,7 @@ Others please just refer to `requirements.txt`
 ./main.py --runner ids_embedding_runner --config ids_embedding.yml
 ```
 Note that training is optional. I am also uploading the model file in the repo because it is small anyway (yeah you can really just use a small model)
+
+## Use 
+
+In order to use your own IDS, just edit in `config/ids_embedding.yml`, replace the line 7 ` test_ids: "⿱⿰耳口之"` to anything you like.

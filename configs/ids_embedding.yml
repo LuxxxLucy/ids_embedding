@@ -1,0 +1,61 @@
+training_steps: 1000
+learning_rate: 0.001
+storage_path: "./storage/ids_embedding/"
+eidsDB_path: "./assets/kanjivg.eids"
+
+method: "LSTM"
+test_ids: "⿱⿰耳口之"
+
+checkpoint: null
+
+seed: 7
+# Training in notebooks (e.g. Google Colab) may crash with too small value
+progress_bar_refresh_rate: 1
+print_config: true
+
+data:
+  num_workers: 0
+
+  labels_count: 1
+  max_label_parts: 7
+  tokens_count: 1
+  max_token_parts: 5
+
+  max_tree_nodes: 250
+  max_tree_depth: 20
+
+  batch_size: 5
+  test_batch_size: 10
+
+  split_leaves: true
+
+model:
+  # Encoder
+  embedding_size: 100
+  encoder_dropout: 0.00
+  encoder_num_layers: 2
+  # encoder_size: 20
+  encoder_size: 50
+  num_layers: 4
+
+  # Decoder
+  # decoder_size: 20
+  decoder_size: 50
+  decoder_num_layers: 2
+  # rnn_dropout: 0.05
+  rnn_dropout: 0.00
+
+optimizer:
+  lr: 0.1
+  weight_decay: 0.0001
+  decay_gamma: 0.95
+
+train:
+  # gpu: 0
+  n_epochs: 50
+  # patience: 10
+  # clip_norm: 10
+  teacher_forcing: 1.0
+  # val_every_epoch: 1
+  # save_every_epoch: 1
+  # log_every_n_steps: 10
